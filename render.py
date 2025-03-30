@@ -65,5 +65,9 @@ if __name__ == "__main__":
   output = open("table.txt", "w")
   for song in songs[::-1]:
     output.write("%.1f %.4f %s\n" % (song[1], song[0], song[2]))
+  if len(songs) >= 30:
+    output.write("B30: %.4f\n" % (sum(song[0] for song in songs[-30:]) / 30))
+  if len(songs) >= 10:
+    output.write("B10: %.4f\n" % (sum(song[0] for song in songs[-10:]) / 10))
   output.close()
   
