@@ -1,5 +1,8 @@
 # Arcaea-B30-Generator
 
+> [!WARNING]
+> 由于 7.0 版本开始，Arcaea 不再使用 B30+R10 算分方式，所以本仓库内容已过时。
+
 本地使用 Python 生成可视化 Arcaea B30，指导 Arcaea 推分。
 
 ## 环境要求
